@@ -1,0 +1,78 @@
+body {
+	background-color: #efefef;
+}
+
+header {
+	background-color: #cccccc;
+	padding: 5px;
+}
+	header h2.logo {
+		float: left;
+		text-transform: uppercase;
+		font-size: 32px;
+	}
+	header nav {
+		float: right;
+	}
+		header nav ul {
+		}
+			header nav ul li {
+				float: left;
+				background-color: #e0e0e0;
+				padding: 5px 15px;
+				margin: 5px 5px 10px 0;
+				font-weight: bold;
+			}
+			header nav ul li:hover {
+				color: #b93232;
+			}
+
+div.page-content section.main-carousel {
+	background-color: #f9f9f9;
+}
+	.page-content .main-carousel {}
+		.page-content .main-carousel .carousel-cells article .slide-text {
+			margin: auto;
+			text-align: center;
+		}
+			.page-content .main-carousel .carousel-cells article .slide-text h1 {
+				font-size: 40px;
+			}
+			.page-content .main-carousel .carousel-cells article .slide-text p {
+				font-size: 14px;
+				font-weight: bold;
+			}
+	
+
+
+div.page-content section.column-content {
+	margin: 20px; 
+}
+	div.page-content section.column-content h1 {
+		font-size: 28px;
+		margin-bottom: 0;
+	}
+	div.page-content section.column-content h3 {
+		font-size: 18px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+		div.page-content section.column-content aside.list-block {
+			float: left;
+			width: 25%;
+		}
+			div.page-content section.column-content aside.list-block ul li {
+				list-style-type: none;
+			}
+
+@media screen and (max-width: 480px) {
+	div.page-content section.column-content aside.list-block {
+		float: left;
+		width: 33%;
+	}
+		div.page-content section.column-content aside.list-block:last-child {
+			display: block;
+			float: left;
+			width: 33%;
+		}
+}
