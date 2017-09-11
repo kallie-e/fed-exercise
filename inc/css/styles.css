@@ -31,6 +31,24 @@ div.page-content section.main-carousel {
 	background-color: #f9f9f9;
 }
 	.page-content .main-carousel {}
+		.page-content .main-carousel .carousel-cells article.item {
+			left: 0;
+			top: 0;
+			position: absolute;
+			display: flex;
+			transition: opacity 5s;
+			opacity: 0.0;
+			z-index: -1000;
+
+			transition: opacity 3s;
+			-webkit-transition: -webkit-opacity 3s;
+			-moz-transition: opacity 3s;
+			-o-transition: opacity 3s;
+		} 
+			.page-content .main-carousel .carousel-cells article.item.active {
+				opacity: 1.0;
+			}
+
 		.page-content .main-carousel .carousel-cells article .slide-text {
 			margin: auto;
 			text-align: center;
